@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+sudo rm /usr/share/applications/atom-handler.desktop
+sudo cp atom-handler.desktop /usr/share/applications
+sudo update-desktop-database
+
+sudo rm /usr/local/bin/atom-handler
+sudo cp atom-handler /usr/local/bin/
+sudo chmod +x /usr/local/bin/atom-handler
