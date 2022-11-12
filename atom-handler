@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+request=$1
+
+# Decode URL
+request=$(echo $request)
+
+# Replace &line= with :
+request=${request/&line=/:}
+
+# Launch Atom
+/usr/bin/atom $request
